@@ -13,13 +13,12 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
-collections:
-  - name: 'front-page'
-    label: 'Front page'
-    folder: 'front-page'
+  - name: "front-page"
+    label: "Front page"
+    folder: "front-page"
     create: false
-    slug: 'front-page'
+    slug: "front-page"
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'paragraph', name: 'paragraph', widget: 'markdown' }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "paragraph", name: "paragraph", widget: "markdown" }
       - { label: "Featured Image", name: "image", widget: "image" }
