@@ -20,5 +20,5 @@ collections:
     slug: "front-page"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "paragraph", name: "paragraph", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "image", widget: "image" }
