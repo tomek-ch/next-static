@@ -2,14 +2,13 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import marked from "marked";
-import Image from "next/image";
 
 function Post({ data: { title, date, image }, content }) {
   return (
     <div>
       <h1>{title}</h1>
       <p>{date}</p>
-      <Image src={image} width={1000} height={500} />
+      <img src={image} />
       <div dangerouslySetInnerHTML={{ __html: marked(content, {}) }}></div>
     </div>
   );

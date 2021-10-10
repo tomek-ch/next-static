@@ -3,7 +3,6 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Home({ posts }) {
   console.log(posts);
@@ -23,7 +22,7 @@ export default function Home({ posts }) {
                 <h2>{title}</h2>
                 <p>{date}</p>
                 <p>{excerpt}</p>
-                <Image src={image} width={1000} height={500} />
+                <img src={image} />
               </a>
             </Link>
           </div>
