@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -10,12 +11,12 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+          <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Head>
         <body>
           <Main />
           <NextScript />
-          <script src="netlifyAdmin.js" />
+          <Script src="netlifyAdmin.js" />
         </body>
       </Html>
     );
