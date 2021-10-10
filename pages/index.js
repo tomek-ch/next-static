@@ -3,9 +3,19 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Home({ posts }) {
-  console.log(posts);
+  useEffect(() => {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  });
+
   return (
     <div>
       <Head>
