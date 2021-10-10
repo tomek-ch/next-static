@@ -34,7 +34,10 @@ export async function getStaticProps({ params: { slug } }) {
 
   return {
     props: {
-      data,
+      data: {
+        ...data,
+        date: data.date.toString(),
+      },
       content,
     },
   };

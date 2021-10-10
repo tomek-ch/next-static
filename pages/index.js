@@ -44,7 +44,10 @@ export async function getStaticProps() {
 
     return {
       slug,
-      data,
+      data: {
+        ...data,
+        date: data.date.toString(),
+      },
     };
   });
 
