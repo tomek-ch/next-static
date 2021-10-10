@@ -1,6 +1,7 @@
 ---
-title: "Welcome to my site"
-image: "/images/img.jpg"
+title: Welcome to my site
+paragraph: ily
+image: /images/img.jpg
 ---
 
 Hello **everyone**
